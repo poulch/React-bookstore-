@@ -1,20 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'antd';
+import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 
-const ListItem = ({ name, title, img }) => {
+const ListItem = ({ id, name, title, img }) => {
   return (
-    <Card
-      hoverable
-      cover={<img src={img} alt="img"/>}
-    >
-    <Meta
-      title={title}
-      description={name}
-    />
-    </Card>
+    <Link to={`/detail/${id}`}>
+      <Card
+        hoverable
+        cover={<img src={img} alt="img" />}
+      >
+        <Meta
+          title={title}
+          description={name}
+        />
+      </Card>
+    </Link>
   )
 }
 

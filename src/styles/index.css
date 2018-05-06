@@ -21,7 +21,8 @@ body {
   flex-wrap: wrap;
 }
 
-.ant-card {
+a {
+  display: block;
   margin-bottom: 20px;
   width: calc(33.33333% - 20px);
 }
