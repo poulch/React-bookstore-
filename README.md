@@ -1,6 +1,8 @@
 ## React Bookstore
 
-To run
+### To run
 
-### `npm install` to install all packages
-### `npm start` to start project
+```
+  npm install
+  npm start
+```
